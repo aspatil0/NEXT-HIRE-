@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Posting Page</title>
+  <link rel="stylesheet" href="JobProvider.css"/>
+</head>
+<body>
+  <canvas id="network-canvas"></canvas>
+
+  <header>
+    <div class="logo">Logo</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Job Listings</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <h1>Post a Job</h1>
+    <form id="job-form">
+      <label for="title">Job Title</label>
+      <input type="text" id="title" name="title" required />
+
+      <label for="domain">Job Domain</label>
+      <input type="text" id="domain" name="domain" required />
+
+      <label for="location">Job Location</label>
+      <input type="text" id="location" name="location" required />
+
+      <label for="description">Job Description</label>
+      <textarea id="description" name="description" rows="5" required></textarea>
+
+      <button type="submit">Post</button>
+    </form>
+  </main>
+
+  <footer>
+    © 2023 Company Name. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

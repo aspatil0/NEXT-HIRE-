@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+    background: url("../images/background.jpeg") no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .background-overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .job-listings {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .job-card {
+    background-color: rgba(255, 255, 255);
+    padding: 30px;
+    border-radius: 15px;
+    min-width: 300px;
+    flex: 0 0 auto;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    scroll-snap-align: start;
+  }
+  
+  
+  .job-card h2 {
+    margin-bottom: 15px;
+    color: #006d77;
+  }
+  
+  .footer {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .job-listings::-webkit-scrollbar {
+    height: 8px;
+  }
+  .job-listings::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  .job-listings::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  button{
+    color: #006d77;
+    border-radius: 4px;
+    padding: 1%;
+    margin-top: 2%;
+  }
+  

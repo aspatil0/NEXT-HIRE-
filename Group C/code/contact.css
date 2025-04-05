@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e6f0f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: white;
+    border-bottom: 2px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+   
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+/* Main container for contact cards */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 1%;
+    
+}
+
+.contact-options{
+    padding-top: 10%;
+}
+
+/* Contact card design */
+.contact-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    width: 40%; /* Larger box size */
+    height: 250%;
+    text-align: center;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Move first box ("Talk to a Member of Our Sales") to the left */
+.contact-card:first-child {
+    position: absolute;
+    left: 0;
+}
+
+/* Move second box to the right */
+.contact-card:last-child {
+    position: absolute;
+    right: 0;
+}
+
+/* Contact card image */
+.contact-card img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+/* Card heading */
+.contact-card h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+/* Card text */
+.contact-card p {
+    font-size: 16px;
+    color: #444;
+}
+
+/* Button styling */
+.btn {
+    background: #162a52;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15%;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #0d1b3b;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        position: static;
+    }
+
+    .contact-card {
+        position: static;
+        width: 90%;
+    }
+}  
+         
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 1%;
+}
+
+body {
+    position: relative; /* Ensure the body is positioned relative for the pseudo-element */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling if the content exceeds the viewport */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next Hire</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      }
+      .top-left {
+      color: black;
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .top-container {
+      display: flex;
+      justify-content: space-between;  
+      align-items: center;  
+      background-color: rgba(255, 255, 255, 0.7); 
+      padding: 10px 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        
+    }
+    
+    .navbar {
+      display: flex;
+    }
+
+    .navbar a {
+      color: black;  
+      text-decoration: none;
+      margin-left: 25px;
+      padding: 20px;
+      border-radius: 20px;
+      transition: background-color 0.3s;
+      font-size: 20px;
+     
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;  
+      
+      background-color: rgba(255, 255, 255, 0.7); 
+      padding: 10px 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        
+        z-index: 1000;
+        
+        margin-left: 100px;
+        margin-right: 190px;
+        border-radius: 10px;
+        height:440px;
+        width: 1200px;
+        background-color: white;
+        border: 2px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    #jobs
+    {
+      align-items :baseline;
+      font-style: normal;
+      text-align: justify;
+
+    }
+    .search-bar {
+    margin: 100px auto 20px; /* Adjust margin to position it below the navbar */
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-bar form {
+    display: flex;
+    width: 100%;
+  }
+
+  .search-bar input[type="search"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+  }
+
+  .search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .search-bar button:hover {
+    background-color: #0056b3;
+  }
+
+    
+    </style>
+</head>
+<body>
+
+  <div class="top-container">
+    
+    <div class="top-left">Next Hire</div>
+    
+    <div class="navbar">
+      <a href="index (4).html">Home</a>
+      <a href="">About Us</a>
+      <a href="">Contact Us</a>
+    
+  </div>     
+    </div>
+    <div class="search-bar">
+      <form action="#" method="post">
+        <input type="search" id="search" name="search" placeholder="Search for jobs..." />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    <div class="container">
+      <div id="jobs">
+        <a href="#" ><h2>Job Title</h2> </a>
+      <h4>Company name</h4><br>
+      <hr>
+      <div id="jobs"></div>
+        <a href="#" ><h2>Job Title</h2> </a>
+      <h4>Company name</h4><br>
+      <hr>
+      <div id="jobs"></div>
+        <a href="#" ><h2>Job Title</h2> </a>
+      <h4>Company name</h4><br>
+      <hr>
+      </div>
+    </div>
+ 
+  <img src="Images/provider.png" alt="Logo" style="width: 1800px; height: 700px; margin: 10px auto; display: flexbox; position: fixed; top:11%; left: 50%; transform: translateX(-50%); z-index: -1;">
+  
+ 
+</body>
+</html>
